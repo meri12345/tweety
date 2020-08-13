@@ -10,10 +10,9 @@
            @include("_publish_tweet_pannel")
 
             <div class="border border-gray-300 rounded-lg" style="max-width: 700px">
+                @foreach($tweets as $tweet)
                 @include ("_tweet")
-                @include ("_tweet")
-                @include ("_tweet")
-                @include ("_tweet")
+                @endforeach
             </div>
         </div>
 
