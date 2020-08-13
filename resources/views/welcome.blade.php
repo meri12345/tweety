@@ -75,7 +75,7 @@
                 <div class="links">
                     <a href="https://laracasts.com">Laracasts</a>
                             @auth
-                                <a href="{{ url('/home') }}">Home</a>
+                                <a href="{{ route('home') }}">Home</a>
                             @else
                                 <a href="{{ route('login') }}">Login</a>
 

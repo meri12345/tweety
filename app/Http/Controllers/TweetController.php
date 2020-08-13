@@ -18,4 +18,12 @@ class TweetController extends Controller
         ]);
         return redirect('/home');
     }
+
+    public function index()
+    {
+        $tweets = Tweet::latest()->get();
+        return view('home',[
+            'tweets'=>auth()->user()->timeline()
+        ]);
+    }
 }
