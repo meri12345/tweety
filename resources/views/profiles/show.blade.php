@@ -12,9 +12,16 @@
     </div>
 
     <div>
-        <a class="shadow rounded-full py-2 px-2 text-xs"  href="#">Edit Profile</a>
-        <a class="bg-blue-500 shadow rounded-lg py-2 px-2 text-white text-xs"  href="#">Follow Me</a>
-
+        @if(auth()->user()->is($user))
+        <a class="shadow rounded-full py-2 px-2 text-xs"  href="/profiles/{{$user->name}}/edit">Edit Profile</a>
+        @else
+        <form action="/profiles/{{$user->name}}/follow" method="POST">
+            @csrf
+            <button class="bg-blue-500 shadow rounded-lg py-2 px-2 text-white text-xs"  type="submit">
+            {{auth()->user()->isFollowing($user) ? 'Unfollow' : 'Follow me'}}
+            </button>
+        </form>
+        @endif
     </div>
 </div>
     <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus a leo tempus elementum eget interdum quam.

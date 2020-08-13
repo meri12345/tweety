@@ -16,7 +16,7 @@ class TweetController extends Controller
            'user_id'=>auth()->user()->id,
            'body'=>$attr['body']
         ]);
-        return redirect('/home');
+        return redirect(route('home'));
     }
 
     public function index()

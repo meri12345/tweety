@@ -125,7 +125,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/components" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -133,6 +133,7 @@
       <recent name="C:\Users\LENOVO\twitter\resources\views\index" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\twitter\resources\views\components" />
       <recent name="C:\Users\LENOVO\twitter\public\images" />
       <recent name="C:\Users\LENOVO\twitter\resources\views\tweets" />
     </key>
@@ -151,11 +152,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597308296910</updated>
-      <workItem from="1597308303822" duration="18196000" />
+      <workItem from="1597308303822" duration="24215000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="139" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1" timestamp="1597331427406">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="139" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1/0.0.1366.728@0.0.1366.728" timestamp="1597331427406" />
+    <state x="513" y="87" key="NewPhpClassDialog" timestamp="1597331320447">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597331320447" />
   </component>
 </project>
