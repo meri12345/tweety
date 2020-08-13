@@ -24,7 +24,7 @@
             class="font-bold text-lg mb-4 block"
         >Lists</a></li>
     <li><a
-            href="{{route('profile',auth()->user()->name)}}"
+            href="{{route('profile',auth()->user()->username)}}"
             class="font-bold text-lg mb-4 block"
         >Profile</a></li>
     <li><a

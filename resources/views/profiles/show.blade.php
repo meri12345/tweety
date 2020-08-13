@@ -13,9 +13,9 @@
 
     <div>
         @if(auth()->user()->is($user))
-        <a class="shadow rounded-full py-2 px-2 text-xs"  href="/profiles/{{$user->name}}/edit">Edit Profile</a>
+        <a class="shadow rounded-full py-2 px-2 text-xs"  href="/profiles/{{$user->username}}/edit">Edit Profile</a>
         @else
-        <form action="/profiles/{{$user->name}}/follow" method="POST">
+        <form action="/profiles/{{$user->username}}/follow" method="POST">
             @csrf
             <button class="bg-blue-500 shadow rounded-lg py-2 px-2 text-white text-xs"  type="submit">
             {{auth()->user()->isFollowing($user) ? 'Unfollow' : 'Follow me'}}
@@ -32,7 +32,7 @@
     <img src="{{$user->avatar}}"
          alt=""
          class="rounded-full mr-2 absolute"
-    style="width:150px; left:calc(50% - 75px); top:60%;">
+    style="width:150px;  left:calc(50% - 75px); top:60%;">
 
 
 
