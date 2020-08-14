@@ -4,7 +4,7 @@
             class="font-bold text-lg mb-4 block"
             >Home</a></li>
     <li><a
-            href="#"
+            href="/explore"
             class="font-bold text-lg mb-4 block"
         >Explore</a></li>
     <li><a

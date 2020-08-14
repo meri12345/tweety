@@ -49,7 +49,12 @@ class User extends Authenticatable
         return $this->hasMany(Tweet::class);
     }
     public function getAvatarAttribute($value){
-        return asset('storage/'.$value);
+        if($value){
+            return asset('storage/'.$value);
+        }
+        else
+            return('/images/no-avatar.jpg');
+
     }
     public function setPasswordAttribute($value){
         $this->attributes['password']= bcrypt($value);
