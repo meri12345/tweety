@@ -42,7 +42,10 @@ class User extends Authenticatable
         $ids->push($this->id);
 
 
-        return Tweet::whereIn('user_id',$ids)->latest()->get();
+        return Tweet::whereIn('user_id',$ids)->withLikes()->latest()->get();
+    }
+    public function likes(){
+        return $this->hasMany(Like::class);
     }
 
     public function tweets(){

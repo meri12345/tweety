@@ -64,5 +64,6 @@
             @enderror
         </div>
         <button type="submit">Confirm</button>
+        <a href="/profiles/{{$user->username}}">Cancel</a>
     </form>
 @endsection
